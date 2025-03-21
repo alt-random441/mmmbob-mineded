@@ -26,10 +26,9 @@ jobs:
         with:
           ndk-version: r21e
       - name: Setup Java JDK
-        uses: actions/setup-java@main
+        uses: actions/setup-java@v1
         with:
-          distribution: 'oracle'
-          java-version: '11'
+          java-version: 11
       - name: Setup Android SDK
         uses: android-actions/setup-android@v2.0.2
       - name: Setup gradle.properties
